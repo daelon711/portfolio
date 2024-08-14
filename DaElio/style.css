@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(234, 244, 255);
+}
+header img {
+  padding: 20px;
+  scale: 0.9;
+}
+header p {
+  text-align: center;
+  width: 100%;
+  height: 130px;
+  background-color: rgb(255, 247, 240);
+  padding: 15px 380px;
+  font-family: nothing you could do;
+  font-size: 18px;
+}
+
+.click {
+  scale: 0.22;
+  position: absolute;
+  left: 330px;
+  top: -50px;
+  opacity: 0.2;
+  transform: rotate(45deg);
+}
+
+section {
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+section img:first-of-type,
+section img:nth-of-type(2),
+section img:nth-of-type(3),
+section img:nth-of-type(4) {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+section .hovered-skills {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+section .hovered-experience {
+  position: absolute;
+  top: 30px;
+  scale: 1.09;
+}
+section .hovered-plan {
+  position: absolute;
+}
+section .hovered-hobbies {
+  position: absolute;
+  top: 2px;
+  left: -5px;
+  scale: 0.963;
+}
+section .p-div {
+  position: absolute;
+  font-family: nothing you could do;
+}
+section .p-div .p-skills {
+  position: absolute;
+  top: 175px;
+  left: 160px;
+  font-size: 200%;
+}
+section .p-div .p-experience {
+  position: absolute;
+  top: 170px;
+  left: 450px;
+  font-size: 190%;
+}
+section .p-div .p-plan {
+  position: absolute;
+  top: 165px;
+  left: 835px;
+  font-size: 200%;
+}
+section .p-div .p-hobbies {
+  position: absolute;
+  top: 165px;
+  left: 1180px;
+  font-size: 200%;
+}
+
+.windows {
+  flex-direction: column;
+  display: flex;
+}
+.windows #first-window {
+  height: 800px;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(100%); /* Initially hide the footer is used to move or "translate" the element along the Y-axis (vertical direction) by 100% of its own height. 100% faraway from start point*/
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(255, 247, 240);
+  z-index: 1000;
+}
+footer .card {
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  bottom: 70px;
+  border: solid grey 1px;
+  padding: 30px;
+  background-color: rgba(208, 230, 253, 0.69);
+}
+footer .card.visible {
+  display: flex;
+}
+footer .card p {
+  font-size: 17px;
+  font-family: nothing you could do;
+}
+footer #infoBtn:hover {
+  cursor: pointer;
+}
+footer .word {
+  font-family: nothing you could do;
+  font-size: 25px;
+}
+footer #scroller {
+  position: absolute;
+  top: -23px;
+  right: 710px;
+  scale: 2.2;
+}
+footer #scroller:hover {
+  scale: 2.3;
+  top: -40px;
+}
+footer i {
+  scale: 1.5;
+  color: rgb(216, 179, 139);
+  transition: 0.3s;
+}
+footer i:hover {
+  scale: 2;
+  color: rgba(0, 149, 255, 0.367);
+}/*# sourceMappingURL=style.css.map */

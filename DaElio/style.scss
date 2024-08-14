@@ -1,0 +1,250 @@
+$prime-text :rgb(255, 247, 240);
+$prime-background :rgb(234, 244, 255);
+$main-font:nothing you could do;
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $prime-background;
+
+
+
+
+    img {
+        padding: 20px;
+        scale: 0.9;
+
+    } 
+
+    p {
+        text-align: center;
+        width: 100%;
+        height: 130px;
+        background-color: $prime-text;
+        padding: 15px 380px;
+        font-family: $main-font;
+        font-size: 18px;
+
+    }
+}
+
+.click{
+    scale: 0.22;
+    position: absolute;
+    left: 330px;
+    top: -50px;
+    opacity: 0.2;
+    transform: rotate(45deg);
+}
+
+section {
+    display: flex;
+
+
+    position: relative;
+    top: 30px;
+
+
+
+
+    img:first-of-type,
+    img:nth-of-type(2),
+    img:nth-of-type(3),
+    img:nth-of-type(4) {
+        width: 350px;
+        height: 350px;
+        position: relative;
+
+
+    }
+
+
+    .hovered-skills {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+
+    .hovered-experience {
+        position: absolute;
+        top: 30px;
+        scale: 1.09;
+    }
+
+    .hovered-plan{
+        position: absolute;
+        
+    }
+
+    .hovered-hobbies {
+        position: absolute;
+
+        top: 2px;
+        left: -5px;
+        scale: 0.963;
+
+    }
+
+
+    .p-div {
+        position: absolute;
+        font-family: $main-font;
+
+
+
+        .p-skills {
+
+            position: absolute;
+            top: 175px;
+            left: 160px;
+            font-size: 200%;
+
+        }
+
+        .p-experience {
+
+
+            position: absolute;
+            top: 170px;
+            left: 450px;
+            font-size: 190%;
+        }
+
+        .p-plan {
+
+
+            position: absolute;
+            top: 165px;
+            left: 835px;
+            font-size: 200%;
+        }
+
+        .p-hobbies {
+            position: absolute;
+            top: 165px;
+            left: 1180px;
+            font-size: 200%;
+        }
+
+    }
+
+}
+
+
+.windows{
+    flex-direction: column;
+    display: flex;
+
+    #first-window{
+        height: 800px;
+    }
+}
+
+
+
+
+
+footer {
+position: sticky;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 60px;
+padding: 30px;
+text-align: center;
+display: flex;
+            align-items: center;
+            justify-content: space-between;
+transform: translateY(100%); /* Initially hide the footer is used to move or "translate" the element along the Y-axis (vertical direction) by 100% of its own height. 100% faraway from start point*/
+transition: transform 0.3s ease-in-out;
+background-color: $prime-text;
+z-index: 1000;
+
+// align-items: center;
+// justify-content: space-between;
+
+// margin-top: 90px;
+// padding:0 35px 0 ;
+//     background-color: $prime-text;
+//     height: 60px;
+//     width: 100%;
+
+
+
+    .card{
+        display: none;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 15px;
+        bottom: 70px;
+    
+        border: solid grey 1px;
+        padding: 30px;
+        background-color: rgba(208, 230, 253, 0.69);;
+
+
+        
+        
+        &.visible {
+            display: flex;
+        }
+        p{
+            font-size: 17px;
+            font-family: $main-font;
+
+        }
+    }
+    
+       
+    
+    #infoBtn:hover{
+        cursor: pointer;
+    }
+
+    .word {
+            font-family: $main-font;
+            font-size: 25px;
+        }
+    
+    
+        #scroller {
+            position: absolute;
+            top: -23px;
+            right: 710px;
+            scale: 2.2;
+    
+            &:hover{
+            scale: 2.3;
+            top: -40px;
+            }
+        }
+        
+    
+        i {
+    
+            scale: 1.5;
+            color: rgb(216, 179, 139);
+            transition: 0.3s;
+        }
+        i:hover{
+            scale: 2;
+            color: rgba(0, 149, 255, 0.367);
+        }
+}
+
+
